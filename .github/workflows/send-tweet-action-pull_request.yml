@@ -1,4 +1,4 @@
-name: Send a Tweet  then pull request event fired!
+name: Send a Tweet when pull request event fired
 on:
   pull_request:
     types: [opened]
