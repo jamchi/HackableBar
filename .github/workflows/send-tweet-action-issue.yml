@@ -1,4 +1,4 @@
-name: Send a Tweet then issue event fired!
+name: Send a Tweet when issue event fired
 on:
   issues:
     types: [opened]
