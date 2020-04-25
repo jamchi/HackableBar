@@ -1,0 +1,17 @@
+name: LGTM Reaction
+on:
+  pull_request_review:
+    types: [submitted]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: micnncim/action-lgtm-reaction@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_COMMENT_BODY: ${{ github.event.comment.body }}
+          GITHUB_ISSUE_NUMBER: ${{ github.event.issue.number }}
+        with:
+          trigger: '[".*looks good to me.*", ".*lgtm.*", ".*LGTM.*", "^[gG]ood [jJ]ob!?$"]'
