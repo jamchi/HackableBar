@@ -2,5 +2,6 @@ $body-color: slateblue;
 
 body {
   color: $body-color;
-  font-family: sans-serif;
+  font-family: "Playfair Display", 'Noto Serif JP', sans-serif;
+  letter-spacing: 0.2rem;
 }

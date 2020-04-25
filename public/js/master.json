@@ -1,0 +1,211 @@
+{
+  "foods": [{
+    "id": 1,
+    "name": "レバニラ",
+    "description": "レバニラ炒め（レバニラいため）とは、レバーとニラを炒めた中華料理である。ニラレバ炒めとも言う。 概要[編集]. 牛または豚のレバーを血抜きしたのち、ニラ・ショウガとともに炒め、塩・コショウ・醤油・酒で味をととのえるのが一般的な作り方である。 ",
+    "image_url": "/public/images/menu3.jpg",
+    "food_category_id": 1,
+    "rating": 4.2,
+    "price": 700,
+    "nutorition_per_100g": {
+      "fat_gram": 12.5,
+      "protein": 10.2
+    }
+  }],
+  "food_cateogies": [{
+    "id": 1,
+    "name": "炒め物"
+  }],
+  "drinks": [
+    {
+      "id": 1,
+      "name": "キューバリブレ",
+      "description": "キューバ・リブレとは、冷たいタイプのロングドリンクに分類される、ラム酒をベースとするカクテルの1つである。瓶詰のコーラを用いるカクテルとしては極めて古いものの一つ",
+      "image_url": "/public/images/menu1.jpg",
+      "drink_category_id": 3,
+      "serving_size_ml": 400,
+      "total_cost": 280,
+      "price": 600,
+      "profit": 320,
+      "mix": [{
+          "ingredient_id": 1,
+          "rate": 0.5,
+          "note": ""
+        },
+        {
+          "ingredient_id": 2,
+          "rate": 0.5,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "モヒート",
+      "description": "モヒートとは、ラムをベースとした、冷たいタイプのロングドリンクに分類されるカクテルの1種である。キューバのハバナが発祥の地である。有名なカクテルであり、いくつかのレシピがある。 ",
+      "image_url": "/public/images/menu2.jpg",
+      "drink_category_id": 3,
+      "serving_size_ml": 400,
+      "total_cost": 280,
+      "price": 650,
+      "profit": 320,
+      "mix": [{
+          "ingredient_id": 1,
+          "rate": 0.5,
+          "note": ""
+        },
+        {
+          "ingredient_id": 2,
+          "rate": 0.5,
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "drink_categories": [{
+    "id": 3,
+    "name": "カクテル"
+  }],
+  "ingredients": [
+    {
+      "id": 1,
+      "name": "コーラ",
+      "drink_category_id": 3,
+      "serve_unit": 0.4,
+      "cost_per_liter": 187.5
+    }
+  ],
+  "facilities": [{
+    "name": "キャンドル",
+    "price": 1000,
+    "endurance_day": 360
+  }],
+  "bgm_tracks": [{
+    "name": "Anywhare",
+    "artist_name": "Dillon Francis",
+    "spotify_url": "https://open.spotify.com/album/3uRfl5ZsFJpuYj2z1YjXKC"
+  }],
+  "members": [
+    {
+      "id": 1,
+      "name": "Tomy",
+      "profession": "バックエンドエンジニア",
+      "avatar_image_url": "/public/images/member1.jpg",
+      "member_role_id": 1,
+      "facebook_url": "",
+      "twitter_url": "",
+      "github_url": ""
+      },
+    {
+      "id": 2,
+      "name": "Shota Yunoki",
+      "profession": "バックエンドエンジニア",
+      "avatar_image_url": "/public/images/member2.jpg",
+      "member_role_id": 1,
+      "facebook_url": "",
+      "twitter_url": "",
+      "github_url": ""
+    },
+    {
+      "id": 3,
+      "name": "Hiro Wakatsuki",
+      "profession": "フロントエンドエンジニア",
+      "avatar_image_url": "/public/images/member3.png",
+      "member_role_id": 1,
+      "facebook_url": "",
+      "twitter_url": "http://twitter.com/wktq_tenova",
+      "github_url": "http://github.com/wktq"
+      },
+    {
+      "id": 4, 
+      "name": "Goemon",
+      "profession": "謎の男",
+      "avatar_image_url": "/public/images/member4.jpg",
+      "member_role_id": 1,
+      "facebook_url": "",
+      "twitter_url": "",
+      "github_url": ""
+    }
+  ],
+  "member_roles": [
+    {
+      "id": 1,
+      "name": "bartender",
+      "name_in_japanese": "バーテンダー"
+    }
+  ],
+  "photos": [
+    {
+      "id": 1,
+      "image_url": "/public/images/photo1.jpg"
+    },
+    {
+      "id": 2,
+      "image_url": "/public/images/photo2.jpg"
+    },
+    {
+      "id": 3,
+      "image_url": "/public/images/photo3.jpg"
+    },
+    {
+      "id": 4,
+      "image_url": "/public/images/photo4.jpg"
+    },
+    {
+      "id": 5,
+      "image_url": "/public/images/photo5.jpg"
+    },
+    {
+      "id": 6,
+      "image_url": "/public/images/photo6.jpg"
+    },
+    {
+      "id": 7,
+      "image_url": "/public/images/menu1.jpg"
+    }
+  ],
+  "schedules": [
+    {
+      "id": 1,
+      "date": "2020-04-25",
+      "events": [
+        {
+          "id": 1,
+          "title": "バー会開始",
+          "start_at": "20:00",
+          "duration": 15
+        }, 
+        {
+          "id": 2,
+          "title": "もぐもぐタイム",
+          "start_at": "20:30",
+          "duration": 30
+        },
+        {
+          "id": 2,
+          "title": "MTG (Dropbox Paper)",
+          "start_at": "20:45",
+          "duration": 30
+        },
+        {
+          "id": 3,
+          "title": "もくもく開発",
+          "start_at": "21:00",
+          "duration": 60
+        },
+        {
+          "id": 4,
+          "title": "テスト会",
+          "start_at": "22:00",
+          "duration": 60
+        },
+        {
+          "id": 5,
+          "title": "まとめ",
+          "start_at": "23:00",
+          "duration": 60
+        }
+      ]
+    }
+  ]
+}

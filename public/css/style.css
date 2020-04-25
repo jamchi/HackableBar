@@ -4,8 +4,11 @@ html {
 
 body {
   background: #fff;
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 20px;
+  font-family: 'M PLUS 1p',
+  "Open Sans",
+  Arial,
+  sans-serif;
+  font-size: 16px;
   line-height: 1.8;
   font-weight: 300;
   color: gray;
@@ -28,7 +31,8 @@ a:hover {
 
 h1, h2, h3, h4, h5 {
   color: #000;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", 'Noto Serif JP', sans-serif;
+  font-weight: bold;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a {
@@ -168,12 +172,17 @@ textarea.form-control {
 }
 
 .site-header .site-logo {
-  line-height: 0;
-  padding: 2px 10px;
+  line-height: 1.5;
+  display: inline-block;
+  position: relative;
+  padding: 5px 8px 3px 12px;
   border: 2px solid #000;
-  color: #000;
+  color: #fff;
+  background: #000;
   font-size: 30px;
   font-weight: bold;
+  letter-spacing: 0;
+  font-family: "Press Start 2P";
 }
 
 .site-header .social li {
@@ -214,11 +223,12 @@ textarea.form-control {
   line-height: 1.5;
   display: inline-block;
   position: relative;
-  padding: 2px 10px;
+  padding: 5px 8px 3px 12px;
   border: 2px solid #000;
   color: #fff;
   background: #000;
   font-size: 30px;
+  font-family: "Press Start 2P";
 }
 
 .site-header.scrolled .site-nav-toggle {
@@ -529,10 +539,10 @@ textarea.form-control {
 }
 
 .ftco-38 .ftco-38-header .ftco-38-heading {
-  font-size: 30px;
+  font-size: 24px;
   color: #000;
   margin: 0;
-  font-weight: 300;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
@@ -1260,8 +1270,30 @@ textarea.form-control {
 
 .cover_1 .img_bg {
   background-repeat: no-repeat;
-  background-size: cover !important;
+  background-size: 110% 110%;
   background-position: center center;
+  animation: beat 5s infinite;
+
+  /* -webkit-transition: .3s all ease; */
+  /* -o-transition: .3s all ease; */
+  /* transition: .3s all ease; */
+}
+
+@keyframes beat {
+  0% {
+    opacity: 1;
+    background-size: 100% 110%;
+  }
+
+  50% {
+    background-size: 100% 120%;
+    opacity: 1;
+  }
+
+  100% {
+    background-size: 100% 110%;
+    opacity: 1;
+  }
 }
 
 .cover_1 .img_bg, .cover_1 .img_bg > .container > .row {
@@ -1290,15 +1322,16 @@ textarea.form-control {
 .cover_1 .heading {
   color: white;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 36px;
   line-height: 1.5;
+  letter-spacing: 2px;
 }
 
 @media (min-width: 768px) {
   .cover_1 .heading {
-    font-size: 70px;
-    font-weight: 900;
+    font-size: 80px;
     line-height: 1.2;
+    letter-spacing: 4px;
   }
 }
 
@@ -1789,5 +1822,108 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
+  }
+}
+
+.pulse {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: lightblue;
+  cursor: pointer;
+  box-shadow: 0 0 0 lightblue;
+  animation: pulse 2s infinite;
+  vertical-align: middle;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 lightblue;
+  }
+
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 lightblue;
+    box-shadow: 0 0 0 0 lightblue;
+  }
+
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+.Event {
+  display: block;
+  padding: 20px;
+  margin: 12px 0;
+  transform: translateY(0px);
+  opacity: 0;
+}
+
+.Event.show {
+  animation: show-event 0.6s;
+  opacity: 1;
+}
+
+.Event .Event_time {
+  width: 180px;
+  font-size: 32px;
+  margin: 0;
+  display: inline-block;
+  color: #fff;
+  vertical-align: middle;
+  font-family: 'Montserrat',
+  'Noto Sans JP';
+  margin-left: 24px;
+}
+
+.Event .Event_title {
+  font-size: 24px;
+  margin: 0;
+  display: inline-block;
+  color: #333;
+  background-color: #fff;
+  vertical-align: middle;
+  font-family: 'Montserrat',
+  'Noto Sans JP';
+  margin-left: 12px;
+  padding: 12px 32px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 12px rgba(255,255,255,.6);
+}
+
+.Event .pulse {
+  opacity: 0;
+}
+
+.Event.selected .pulse {
+  opacity: 1;
+  }
+
+@keyframes show-event {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
